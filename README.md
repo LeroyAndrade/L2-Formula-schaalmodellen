@@ -1,2 +1,2 @@
 # L2-Formula-schaalmodellen
-den besproken over Formule 1. De echte liefhebbers kunnen zich wagen aan de schaalmodellen die je maandelijks opgestuurd krijgt.  Een website van fans voor fans.
+De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunnen zich wagen aan de schaalmodellen die je maandelijks opgestuurd krijgt wanneer jij je daar voor aanmeld. Een website van fans voor fans.
