@@ -1,0 +1,38 @@
+ public function showProduct($id, Request $request)
+    {
+      //  return 'waarde pararameter show form: ' . $request->get('show_form');
+                                                            //handig voor absoluut path
+       // return 'waarde pararameter show form: ' . $request->fullUrl();
+       // return view('product', ['id' => $id]);
+
+        //inspecteren wat er in een variabele zit
+        // dd($request);
+
+        return response('Foutmelding', 404);
+    }
+
+    /*
+
+     *  public function showProduct($id)
+    {
+        return view('product', ['id' => $id]);
+    }
+
+
+
+        public function showProduct($category, $id)
+        {
+            return 'Category = ' . $category .'en id is: ' . $id;
+            //return view('product');
+        }
+
+
+
+        public function showProduct($category, $id = -0)
+    {
+        return view('product', ['category' => $category, 'id' => $id]);
+
+        //return view('product');
+    }
+    */
+}

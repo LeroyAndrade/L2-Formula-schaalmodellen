@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: green;
+}
+
+form {
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 330px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 1em;
+  margin: 1em;
+}
+
+.formText {
+  width: 100vw;
+  color: green;
+}
+
+input[type=text],
+input[type=date],
+input[type=submit] {
+  width: 60%;
+}
+
+input[type=date] {
+  color: green;
+}
+
+.titels .formText {
+  display: flex;
+}
+
+input[type=text],
+[type=date] {
+  float: right;
+}
+
+input[type=submit] {
+  margin: 3px;
+}
+
+.form_groep {
+  margin-top: 1em;
+}
+
+#form_omschrijving {
+  color: green;
+}
+
+#error_Form {
+  background: red;
+  color: #FFFFFF;
+  width: 271px;
+  margin: 1em;
+  padding: 2em;
+}
+
+.is-invalid {
+  border-color: red;
+}
+
+.error_bericht {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: right;
+  border-color: red;
+  color: red;
+  width: 100%;
+}
+
