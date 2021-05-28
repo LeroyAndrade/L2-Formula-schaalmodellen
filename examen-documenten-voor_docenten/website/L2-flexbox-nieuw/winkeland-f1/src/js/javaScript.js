@@ -1,5 +1,4 @@
 
-
 //menu
 const hamburger = document.getElementById("hamburger");
 const kruisje = document.getElementById("kruisje");
@@ -12,9 +11,10 @@ const bergjeGeopend = document.getElementById("bergjeGeopend");
 const bergjeGesloten = document.getElementById("bergjeGesloten");
 
 //F1 afbeelding na menu 
-const sennavoertuig = document.getElementById("senna-voertuig");
+let sennavoertuig = document.getElementById("senna-voertuig");
 
-sennavoertuig.style.display = "none";
+
+
 
 //Hamburger menu button gesloten
 hamburger.addEventListener('click', function(){
