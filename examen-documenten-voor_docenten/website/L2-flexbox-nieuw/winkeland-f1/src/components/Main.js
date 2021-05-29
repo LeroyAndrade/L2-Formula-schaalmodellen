@@ -13,11 +13,11 @@ export default function Main(props){
  <main className="block col-2">
   <h2>Producten</h2>
 
-  <div>
-   { products.map((product) =>(
-    <Product key={product.id} product={product}></Product>
-   )) }
-  </div>
+  <div className="row">
+        {products.map((product) => (
+          <Product key={product.id} product={product}></Product>
+        ))}
+      </div>
  </main>
 
  );
