@@ -1,11 +1,13 @@
 import React from 'react';
-// import '../js/javaScript.js';
+
+// import '../js/javaScript.js';   import './index.css';
 /*
 export de functie die properties accepteerd
 De naam van de functie moet in dit geval altijd de naam zijn van het bestand aldus Header:
 */
+
 export default function Header(props){
- //en return een div element.
+ const {telWinkelmandItems} = props;
  return (
 <aside>
 
@@ -14,7 +16,15 @@ export default function Header(props){
 
  <i class="geopend zwart verberg" id="kruisje"> &#10007; </i>
 
- <div></div>
+{/* todo: handmatig toevoegen aan Flexbox template */}
+ <a href ="#/totaal">
+  Mandje { ''}
+     {/* is er een item in winkelmandje? true:  laat ze zien */}
+  { telWinkelmandItems ? (
+   <button className="vulMijIn">{telWinkelmandItems}</button>
+      // false toon niets
+  ) : ( ' ')}
+ </a>
 
  <h1>
  <span id="autovet" class="zwart">Auto&#45;vet</span>
@@ -31,16 +41,16 @@ export default function Header(props){
 
 
    <article class="menuRegel">
-    <span class="logo"><img src="./src/export-img/wit-persoon.png" alt="wit-persoon icoon" /></span>  
+    <span class="logo"><img src="https://www.firesofdestruction.nl/bewijzenmap/l2/kid/p4/export-img/wit-persoon.png" alt="wit-persoon icoon" /></span>  
     <a href="./index.html" class="naamMenu wit">Login</a>  
    </article>
 
 
  <article class="menuRegel">
- <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding" /></span>  
+ <span class="logo"><img src="https://www.firesofdestruction.nl/bewijzenmap/l2/kid/p4/export-img/wit-afbeelding.png" alt="wit afbeelding" /></span>  
   <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
-  <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje" /></button>  
-  <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje" /></button>  
+  <button id="bergjeGesloten"  class="logo degDraai180"><img src="https://www.firesofdestruction.nl/bewijzenmap/l2/kid/p4/export-img/wit-bergje.png" alt="wit bergje" /></button>  
+  <button id="bergjeGeopend" class="logo verberg"><img src="https://www.firesofdestruction.nl/bewijzenmap/l2/kid/p4/export-img/wit-bergje.png" alt="wit bergje" /></button>  
  </article>
 
 
@@ -50,7 +60,7 @@ export default function Header(props){
   </section>  
    </nav>  
    </section>
-   
+   {/* {https://www.firesofdestruction.nl/bewijzenmap/l2/kid/p4/export-img/} */}
         <img id="senna-voertuig" src=".././export-img/Senna.png" alt="Ayrton Senna" /> 
   
   </section>
