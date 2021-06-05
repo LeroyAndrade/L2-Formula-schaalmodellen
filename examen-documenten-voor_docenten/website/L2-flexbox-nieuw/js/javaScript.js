@@ -1,4 +1,5 @@
 
+
 //menu
 const hamburger = document.getElementById("hamburger");
 const kruisje = document.getElementById("kruisje");
@@ -11,10 +12,9 @@ const bergjeGeopend = document.getElementById("bergjeGeopend");
 const bergjeGesloten = document.getElementById("bergjeGesloten");
 
 //F1 afbeelding na menu 
-let sennavoertuig = document.getElementById("senna-voertuig");
+const sennavoertuig = document.getElementById("senna-voertuig");
 
-
-
+sennavoertuig.style.display = "none";
 
 //Hamburger menu button gesloten
 hamburger.addEventListener('click', function(){
@@ -70,5 +70,3 @@ hamburger.addEventListener('click', function(){
    bergjeGeopend.style.display = "none";
  });
 
-// voeg active class toe, wanneer event wordt getriggerd en wanneer default is waarde "".   stylen in CSS met selecter bijv. klas.uitgeklapt
-//wat is de huidige State

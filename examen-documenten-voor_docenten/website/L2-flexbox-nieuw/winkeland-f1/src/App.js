@@ -1,10 +1,16 @@
 import Header from './components/Header';
 import Main from './components/Main';
+import MenuOpen from './components/classes/MenuOpen';
 import Winkelmand from './components/Winkelmand';
 import data from './voertuigModellen.js';
 
+
+
 //Importeer useState om het te gebruiken voor winkelmand
 import { useState } from 'react';
+import FunctionClick from './components/classes/FunctionClick';
+
+
 // import './js/javaScript.js';
 
 
@@ -47,13 +53,16 @@ function App() {
        ?  {...itemBestaat, qty: itemBestaat.qty -1 } 
        : x ));
        }
-
  };
+
   return (
    <div className="App">
     {/*Menu REACT object*/}
     <Header telWinkelmandItems={winkelmandItems.length}></Header>
 
+    {/* function eventhandlers */}
+    <FunctionClick> </FunctionClick>
+    <MenuOpen></MenuOpen>
 
     {/*Winkelmand Main object en geef de functie onAdd door*/}
     <div className="row">

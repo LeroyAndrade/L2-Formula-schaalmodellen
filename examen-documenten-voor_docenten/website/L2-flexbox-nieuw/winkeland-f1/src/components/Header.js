@@ -1,4 +1,7 @@
 import React from 'react';
+import '../opmaak/template.css';
+
+import MenuOpen from './classes/MenuOpen.js';
 
 // import '../js/javaScript.js';   import './index.css';
 /*
@@ -12,18 +15,18 @@ export default function Header(props){
 <aside>
 
 <section id="topMenuContainer">
- <i class="gesloten zwart" id="hamburger"> &#8801; </i>
+ <i class="gesloten zwart" id="hamburger" onClick={MenuOpen}> &#8801; </i>
 
  <i class="geopend zwart verberg" id="kruisje"> &#10007; </i>
 
 {/* todo: handmatig toevoegen aan Flexbox template */}
  <a href ="#/totaal">
-  Mandje { ''}
+  Mandje { '' } 
      {/* is er een item in winkelmandje? true:  laat ze zien */}
   { telWinkelmandItems ? (
    <button className="vulMijIn">{telWinkelmandItems}</button>
       // false toon niets
-  ) : ( ' ')}
+  ) : ( ' ' )} 
  </a>
 
  <h1>

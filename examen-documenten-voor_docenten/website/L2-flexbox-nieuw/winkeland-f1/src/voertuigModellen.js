@@ -1,5 +1,3 @@
-{/*Winkelmand producten object*/}
-
 const data = {
  products: [
   {

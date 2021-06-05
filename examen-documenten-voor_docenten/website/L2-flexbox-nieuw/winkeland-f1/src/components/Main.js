@@ -11,9 +11,9 @@ export default function Main(props){
 
  //Producten krijg je van props en dat is de voertuigenModellen array
  // plaats die array in een variabel
- const { products, onAdd,onRemove } = props; //onAdd is de property van props (de array van de modellen)
+ const { products, onAdd } = props; //onAdd is de property van props (de array van de modellen)
  return (
- <main className="">
+ <main className="vulIetsIn">
   <h2>Producten</h2>
 {/*en roep vervolgens de inhoud op
 Om een item te renderen van de array

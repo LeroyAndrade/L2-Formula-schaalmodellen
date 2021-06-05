@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Basket(props) {
+ const product = props;
  const {winkelmandItems, onAdd, onRemove} = props;//onAdd is de property van props (de array van de modellen)
 
  const winkelmandPrijs = winkelmandItems.reduce((a,b ) => a + b.price * b.qty, 0);
@@ -20,7 +21,7 @@ export default function Basket(props) {
        <div>{winkelmandItems.name}</div>
       
       <div> 
-        <img src={item.image}></img>
+        <img src={item.image} alt={product.name} ></img>
         <button onClick={() => onAdd(item)}    className="add">   &#43; voeg meer toe</button>
         <button onClick={() => onRemove(item)} className="remove">&#45; verwijder</button>
         {item.qty} x &euro{item.price.toFixed(2)}
