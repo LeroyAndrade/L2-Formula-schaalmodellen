@@ -7,11 +7,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  padding: 0;
 }
 
+
+
 body {
  margin: 0 auto;
  padding: 0;
  background-color: #FFF;
- width: 96vw;
+ width: 80vw;
  height: 100vw;
  position: relative;
  color: #000;
@@ -54,17 +56,38 @@ i{
  flex-direction: column;
 }
 
+.spacebetween{
+ display: flex;
+ justify-content: space-between;
+}
+
+.column{
+ display: flex;
+ flex-direction: column;
+}
+
+.row{
+ display: flex;
+ flex-direction: row;
+}
+
+.flexColumn{
+ flex-direction: column;
+}
+.align-items-center{ align-items: center;}
+.flex-direction-center{justify-content:  center;}
+
 /*Header top menu*/
    #topMenuContainer{
     display: flex;
     justify-content: space-between;
-    width: inherit;
+    width: 80vw;
    }
 
-   /* #hamburger{
-
+  #hamburger{
+    font-size: 50px;
    }
-
+/* 
    #kruisje{
 
    } */
@@ -106,7 +129,7 @@ display: flex;
 #dropdownContainer{
  background-color: #E5E5E5;
  margin: 1vh 0 0 -1vw;
- width: 87vw;
+ width: auto;
  padding: 1vh 0 0 9vw;
  color: #000;
  font-size: inherit;
@@ -130,9 +153,15 @@ span:hover{
 
 .rood{color: red;}
 .wit{color:#FFF;}
-.blauw{color: blue;}
+.blauw{color: #0090FF;}
 .zilver{color: #e3e3e3;}
 .zwart{color: black;}
+.groen{color: #2AFF6A;}
+
+.rem1, .font16 { font-size:16px  ;}
+.font24        { font-size: 24px ;}
+.font30        { font-size: 30px ;}
+
 
 a{
  text-decoration: none;
@@ -146,6 +175,28 @@ a{
 }
 /*END Menu*/
 
+
+/* Main */
+main{
+ width: 80vw;
+ /* margin: 0 auto; */
+ position: absolute;
+ left: 50%;
+ -webkit-transform: translateX(-50%);
+ transform: translateX(-50%);
+}
+
+/* Eerste tekst titel van de MAIN */
+.text1{
+ margin-top: 16px;
+ font-size: 1rem;
+}
+
+
+/* Input veld */
+input{
+ border-radius: 5px;
+}
 @media only screen and (min-width: 600px) {
 
 

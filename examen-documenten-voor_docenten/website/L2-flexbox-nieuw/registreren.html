@@ -9,7 +9,7 @@
 
     <title>Opdracht </title>
       <link rel="stylesheet" type="text/css" href="./opmaak/template.css">
-      <link rel="stylesheet" type="text/css" href="./opmaak/munten.css">
+      <link rel="stylesheet" type="text/css" href="./opmaak/registreren.css">
   </head>
 
   <!-- -->
@@ -112,75 +112,31 @@
 
 
        <main>
-
         
-         <span class="blauw font30">Munten</span>
+         <span class="blauw font30">Registreren</span>
 
-         <p class="text1">U kunt er voor kiezen de 
-          opgespaarde punten te besteden
-          tijdens de bestelling ze zijn 730 dagen
-          geldig van het moment van aankoop
-         </p>
-         <br>
-          <section class="">
-           
-           <!-- 10 euro -->
-           <article class="spacebetween">
-            <span class="blauw"> 100 munten    </span>
-            <span>               &rightarrow;  </span>
-            <span class="groen"> &euro; 10     </span>
-           </article>
+         <form action="" type="post" class="column">
 
-           <!--25 euro  -->
-           <article class="spacebetween">
-            <span class="blauw"> 250 munten    </span>
-            <span>               &rightarrow;  </span>
-            <span class="groen"> &euro; 25     </span>
-           </article>
+         <label for="inputGebruikersnaam">Gebruikersnaam</label>
+          <input type="text" class="" id="inputGebruikersnaam" name="inputGebruikersnaam" placeholder="Vul uw gebruikersnaam in" minlength='3' required>
+         
+          <br>
+          <section class="row flex-direction-center">
+           <label for="inputGebruikersnaam">Adres</label>
+           <span>d</span>
+           <label for="inputGebruikersnaam">Adres</label>
+          
           </section>
+          <input type="text" class="width50" id="inputGebruikersnaam" name="inputGebruikersnaam" placeholder="Vul uw gebruikersnaam in" minlength='3' required>
 
-          <!-- 50 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 500 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 50     </span>
-          </article>
+          <input type="submit">
+        </form>
 
-          <!-- 75 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 750 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 75     </span>
-          </article>
+         <br>
 
-          <!-- 100 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 1000 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 100     </span>
-          </article>
-
-      
-        <br><br>
-        <article class="spacebetween">
-         <span> </span>
-          <span> Opgespaarde munten </span>
-         <span></span>
-        </article>
         
-        <br>
-        
-        <article class="spacebetween">
-         <span> </span>
+   
 
-         <!-- de volgende twee items in een sectie geplaatst zodat ze naast elkaar komen -->
-          <section> 
-           <img src="./export-img/zwart-coins.png" alt="Opgespaarde munten: ">
-           <span class="alignSelfLeft">1125</span>
-         </section>
-
-        <span> </span>
-        </article>
        </main>
 
 
@@ -198,19 +154,19 @@
 
        
      <script>
-      function tabBladen(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+
+     const input = document.querySelector('input[name="inputGebruikersnaam"]');
+
+     input.addEventListener('invalid', function (event) {
+      if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity('Vul hier uw gebruikersnaam in.');
       }
+     })
+
+     input.addEventListener('change', function (event) {
+      event.target.setCustomValidity('');
+     })
+
       </script>
 
 

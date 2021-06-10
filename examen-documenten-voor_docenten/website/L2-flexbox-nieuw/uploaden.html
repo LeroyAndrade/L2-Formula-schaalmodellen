@@ -9,7 +9,7 @@
 
     <title>Opdracht </title>
       <link rel="stylesheet" type="text/css" href="./opmaak/template.css">
-      <link rel="stylesheet" type="text/css" href="./opmaak/munten.css">
+      <link rel="stylesheet" type="text/css" href="./opmaak/uploaden.css">
   </head>
 
   <!-- -->
@@ -112,75 +112,69 @@
 
 
        <main>
+        
+         <span class="blauw font30">Uploaden</span>
+
+
+         
+         <br>
 
         
-         <span class="blauw font30">Munten</span>
+         <article class="spacebetween">
+          <span></span> 
+          
+          <!-- methode post op release -->
+          <form method="get" enctype="multipart/form-dat" action="#">   
+          
 
-         <p class="text1">U kunt er voor kiezen de 
-          opgespaarde punten te besteden
-          tijdens de bestelling ze zijn 730 dagen
-          geldig van het moment van aankoop
-         </p>
-         <br>
-          <section class="">
+           <!--Dit is wat er gebeurd:
+
+            In uploaden.css -> bezit de border de eigenschap: de breedtes en hoogtes. Dit is het kader. Sta mij alstublieft toe u een vierkant te laten visualeren. De vierkant is een div.
+          
+           In template.css = bezit de klasse .column de volgende eigenschappen:  display: flex
+           dus alle items komen per default naast elkaar, daarmee heb ik ook de flex 'library' opgeroepen. 
+            Daarom kan ik nu alle items onder elkaar krijgen met flex-direction: column; 
+            Dus binnen de vierkant, top-left, komt foreach new element, onder elkaar te staan.
+
+            dus ieder div binnen dit .border kader wordt getoond als: van boven naar beneden omdat dit de eigenschap is de je aan de vierkant /div meegeeft.
+            Dit kan allemaal in 1 div met een wat strakker uitleg maar ik gebruik individuele klasses zodat ik ze kan hergebruiken en dat is efficiënter en bespaart KILObytes aan code. 
+
            
-           <!-- 10 euro -->
-           <article class="spacebetween">
-            <span class="blauw"> 100 munten    </span>
-            <span>               &rightarrow;  </span>
-            <span class="groen"> &euro; 10     </span>
-           </article>
+          .column er voor zorgt dat de elementen onder elkaar tonen en de flex-direction verteld waar op de horizontale lijn die content wordt getoond.
+          
+         Ik heb een leeg span geplaatst omdat de flexbox dat meeteld als element. Want die span wordt gereserveerd door de flexbox
+        
+        Hoe ik de tekst: 'Geüploade afbeelding' precies in het midden krijg ten opzichte van de height is waar ik nog mee bezig ben-->
+          <div class="border column align-items-center">
+           <span> </span>
+           <span>Geüploade afbeelding</span>
+           <span> </span>
+          </div>
 
-           <!--25 euro  -->
-           <article class="spacebetween">
-            <span class="blauw"> 250 munten    </span>
-            <span>               &rightarrow;  </span>
-            <span class="groen"> &euro; 25     </span>
-           </article>
+          <span class="blauw font30">Toegestaan: .png .jpg .jpeg</span>
+
+          <section class="column">
+           <input type="file" class="button1">
+
+           <span>Informatie</span>
+           <input type="text">
+
+           <span>Prijs</span>
+           <input type="text" placeholder="&euro; prijs">
+           
+           <span>Punten</span>
+           <input type="text" placeholder="53 &#47; 100 ">
+           
+           <button type="submit" class="buttonSubmit align-items-center"  type="submit">Verzenden</button>
           </section>
 
-          <!-- 50 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 500 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 50     </span>
-          </article>
+          
+          </form>
 
-          <!-- 75 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 750 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 75     </span>
-          </article>
-
-          <!-- 100 euro -->
-          <article class="spacebetween">
-           <span class="blauw"> 1000 munten    </span>
-           <span>               &rightarrow;  </span>
-           <span class="groen"> &euro; 100     </span>
-          </article>
-
-      
-        <br><br>
-        <article class="spacebetween">
          <span> </span>
-          <span> Opgespaarde munten </span>
-         <span></span>
-        </article>
-        
-        <br>
-        
-        <article class="spacebetween">
-         <span> </span>
+         </article>
+   
 
-         <!-- de volgende twee items in een sectie geplaatst zodat ze naast elkaar komen -->
-          <section> 
-           <img src="./export-img/zwart-coins.png" alt="Opgespaarde munten: ">
-           <span class="alignSelfLeft">1125</span>
-         </section>
-
-        <span> </span>
-        </article>
        </main>
 
 

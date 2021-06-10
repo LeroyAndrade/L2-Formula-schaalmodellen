@@ -1,0 +1,42 @@
+
+
+.text1{
+ margin-top: 16px;
+ font-size: 1rem;
+}
+
+.border{
+ width: 78vw;
+ border: 1px solid #000;
+ height: 153px;
+}
+
+.border > span{
+ height: 33.3%;
+}
+
+.form{
+ justify-content: space-between;
+}
+
+.button1{
+ border-radius: 15px;
+ background-color: #4CAF50; 
+}
+
+.buttonSubmit{
+
+ padding: 1em .2em;
+ background-color: #4CAF50; 
+}
+
+.button2{
+ border-radius: 15px;
+ padding: .5em 3em;
+ background-color: white;
+ border: 1px solid black;
+}
+
+input[type='button']{
+ padding: 2em;
+}
