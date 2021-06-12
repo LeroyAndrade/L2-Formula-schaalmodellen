@@ -6,3 +6,22 @@
 .width50{
  width: 50vw;
 }
+
+#inputAdres{
+ width: 50vw;
+}
+
+
+#inputPostcode{
+ width: 22vw;
+}
+
+#submitInput{
+ width: 42vw;
+ height: 5vh;
+}
+
+.paddingLeftRight3{
+ padding-left: 3px;
+ padding-right: 3px;
+}

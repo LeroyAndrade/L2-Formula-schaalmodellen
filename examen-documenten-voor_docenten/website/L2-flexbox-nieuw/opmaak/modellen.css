@@ -1,0 +1,18 @@
+.buttonModellenKoopAr{
+ width: 20vw!important;
+ padding-left: 5vw;
+}
+
+.border{
+ border:1px solid black;
+ margin-top: 1vh;
+ width: fit-content;
+ height: auto;
+}
+
+.border p{
+ padding-left: 5px;
+}
+.buttonRuimte{
+ width: 150px;
+}

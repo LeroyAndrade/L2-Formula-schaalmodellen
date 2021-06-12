@@ -50,6 +50,10 @@ i{
  display: flex;
  justify-content: flex-start;
 }
+.flexEnd{
+ display: flex;
+ justify-content: flex-end;
+}
 
 /*flex-direction: column*/
 .flexColumn{
@@ -100,6 +104,10 @@ i{
  
 /*Header nav menu*/
 
+#menuA1,#menuA2,#menuA3,#menuA4,#menuA5,#menuA6, .subMenu1, .subMenu2, .subMenu3{
+ opacity: 0;
+}
+
 #wrapperNavMenu{
  height: auto;
  background-color: #000;
@@ -130,7 +138,7 @@ display: flex;
  background-color: #E5E5E5;
  margin: 1vh 0 0 -1vw;
  width: auto;
- padding: 1vh 0 0 9vw;
+ padding: 1vh 38.3vw 0 9vw;
  color: #000;
  font-size: inherit;
 }
@@ -158,20 +166,21 @@ span:hover{
 .zwart{color: black;}
 .groen{color: #2AFF6A;}
 
-.rem1, .font16 { font-size:16px  ;}
+.rem1, .font16 { font-size: 16px ;}
+.font18        { font-size: 18px ;}
 .font24        { font-size: 24px ;}
 .font30        { font-size: 30px ;}
 
+.spatie{ padding-left: 5px;}
+.paddingTop10{ padding-top: 10px;}
 
-a{
- text-decoration: none;
-}
+
+a{ text-decoration: none;}
 
 /*Plaatje onder het menu*/
 #senna-voertuig{
  margin-top: .5vh;
  width: 100%;
-
 }
 /*END Menu*/
 
@@ -196,8 +205,29 @@ main{
 /* Input veld */
 input{
  border-radius: 5px;
+ padding: .1.5em;
+}
+
+input[type=text], input[type=password], input[type=number] {
+ height: 30px;
+ padding-left: 9px;
+ border-top: none;
+border-left: none;
+border-right: none;
+
+}
+
+::placeholder{ padding-left: 3px;}
+
+/* Breedte van afbeelding verkleinen tot de container width */
+.afbeeldingKader{
+ width: 100%;
 }
 @media only screen and (min-width: 600px) {
 
-
+ .afbeeldingKader{
+  max-width: 90%;
+  object-fit: cover;
+  justify-content: flex-center;
+ }
 }

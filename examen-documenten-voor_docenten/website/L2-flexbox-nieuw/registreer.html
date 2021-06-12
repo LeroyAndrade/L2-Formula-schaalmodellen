@@ -9,6 +9,7 @@
 
     <title>Opdracht </title>
       <link rel="stylesheet" type="text/css" href="./opmaak/template.css">
+      <link rel="stylesheet" type="text/css" href="./opmaak/registreren.css">
   </head>
 
   <!-- -->
@@ -31,77 +32,219 @@
 
    <!--Header nav menu-->
    <section class="vulling">
-       <section id="wrapperNavMenu">
-        <h2 class="verberg">Formule 1</h2>
+    <section id="wrapperNavMenu">
+     <h2 class="verberg">Formule 1</h2>
 
-            <nav id="menu">
-             
-             <section id="menuNav">
-            
-              <!--Login-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
-               <a href="./index.html" class="naamMenu wit">Login</a>  
+         <nav id="menu">
+          
+          <section id="menuNav">
+         
+           <!--Login-->
+           <article class="menuRegel" id="menuA1">
+            <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
+            <a href="./index.html" class="naamMenu wit">Home</a>  
+           </article>
+           <!--END login-->
+
+
+           <!--Modellen-->
+            <article class="menuRegel" id="menuA2">
+             <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
+             <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
+             <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+             <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+            </article>
+
+            <!--Dropdown-->
+             <section id="dropdownContainer">
+
+              <article id="dropdownSectie">
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
+               <a href="./modellen.html" class="naamMenu rood subMenu1">Ferrari</a>                       
               </article>
-              <!--END login-->
 
-
-              <!--Modellen-->
-               <article class="menuRegel">
-                <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
-                <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
-                <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-                <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-               </article>
-
-               <!--Dropdown-->
-                <section id="dropdownContainer">
-
-                 <article id="dropdownSectie">
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
-                  <a href="#" class="naamMenu rood">Ferrari</a>                       
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
-                  <a href="#" class="naamMenu zwart">Mercedes</a>                        
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
-                  <a href="#" class="naamMenu blauw">Redbull</a>               
-                 </article>
-                </section>
-               <!--END Dropdown-->
-              <!--END modellen-->
-
-              <!--Upload-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
-               <a href="./upload.html" class="naamMenu wit">Upload</a>   
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
+               <a href="./modellen.html" class="naamMenu zwart subMenu2">Mercedes</a>                        
               </article>
-              <!--END Upload-->
 
-              <!--Register-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
-               <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
+               <a href="./modellen.html" class="naamMenu blauw subMenu3">Redbull</a>               
               </article>
-              <!--END register-->
+             </section>
+            <!--END Dropdown-->
+           <!--END modellen-->
 
-              <!--Sparen-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
-               <a href="./munten.html" class="naamMenu wit">Sparen</a>  
-              </article>
-              <!--END sparen-->
-             </section>  
-           </nav>  
-       </section>
-       <img id="senna-voertuig" src="./export-img/Senna.png" alt="Ayrton Senna">
-      </section>
+           <!--Upload-->
+           <article class="menuRegel" id="menuA3">
+            <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
+            <a href="./upload.html" class="naamMenu wit">Upload</a>   
+           </article>
+           <!--END Upload-->
+
+           <!--Register-->
+           <article class="menuRegel" id="menuA4">
+            <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
+            <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+           </article>
+           <!--END register-->
+
+           <!--Sparen-->
+           <article class="menuRegel" id="menuA5">
+            <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
+            <a href="./munten.html" class="naamMenu wit">Sparen</a>  
+           </article>
+           <!--END sparen-->
+          </section>  
+        </nav>  
+    </section>
+    
+    <img id="senna-voertuig" src="./export-img/LewisHammilton-p1.jpg" alt="Lewis Hamilton afbeelding p1">
+   </section>
   
 
+
+
+
+       <!-- Munten -->
+
+
+
+       <main>
+        
+         <span class="blauw font30">Registreren</span>
+
+         <form method="post" class="column">
+
+         <label for="inputGebruikersnaam">Gebruikersnaam</label>
+          <input type="text" class="paddingLeftRight3" id="inputGebruikersnaam" name="inputGebruikersnaam" placeholder="Vul uw gebruikersnaam in" minlength='3' required>
+         
+          <span class="paddingTop10"></span>
+        
+         
+           <!-- adres postcode -->
+           <section class="row spacebetween">
+            <label for="inputAdres">Adres</label>
+            <label for="inputPostcode">Zipcode</label>
+           </section>
+
+
+           <!-- Input adres & postcode -->
+           <section class="row spacebetween">
+            <input type="text" class="paddingLeftRight3" id="inputAdres" name="inputAdres" placeholder="Vul postcode adres in" minlength='3' required>
+            <input type="text" class="paddingLeftRight3" id="inputPostcode" name="inputPostcode" placeholder="Uw postcode" minlength='3' required>
+           </section>
+       
+           <span class="paddingTop10"></span>
+
+          <!-- Wachtwoord 1 -->
+            <section class="column">
+            <label for="inputWachtwoord">Wachtwoord</label>
+            <input type="password" class="paddingLeftRight3" id="inputWachtwoord" name="inputWachtwoord" placeholder="Vul uw wachtwoord in" minlength='6' required>
+           </section>
+
+           <span class="paddingTop10"></span>
+          <!-- Wachtwoord herhalen -->
+           <section class="column">
+           <label for="inputWachtwoordHerhaal">Herhaal Wachtwoord</label>
+           <input type="password" class="inputWachtwoordHerhaal paddingLeftRight3" id="inputWachtwoordHerhaal" name="inputWachtwoordHerhaal" placeholder="Vul uw wachtwoord in" minlength='6' required>
+          </section>
+  
+
+          <span class="paddingTop10"></span>
+          <!-- Input adres & postcode -->
+          <section class="row flex-direction-center">
+           <input id="submitInput" type="submit">
+          
+          </section>
+
+    
+        </form>
+
+         <br>
+
+        
+   
+
+       </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     <script>
+// vul gebruikersnaam in
+     const input = document.querySelector('input[name="inputGebruikersnaam"]');
+
+     input.addEventListener('invalid', function (event) {
+      if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity('Vul hier uw gebruikersnaam in.');
+      }
+     })
+
+     input.addEventListener('change', function (event) {
+      event.target.setCustomValidity('');
+     })
+
+ // vul adres in
+ const inputAdres = document.querySelector('input[name="inputAdres"]');
+ inputAdres.addEventListener('invalid', function (event) {
+      if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity('Voer uw adres in.');
+      }
+     })
+
+     inputAdres.addEventListener('change', function (event) {
+      event.target.setCustomValidity('');
+     })
+
+
+ // vul postcode in
+ const inputPostcode = document.querySelector('input[name="inputPostcode"]');
+ inputPostcode.addEventListener('invalid', function (event) {
+      if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity('Voer uw postcode in zoals: 1010AB.');
+      }
+     })
+
+     inputPostcode.addEventListener('change', function (event) {
+      event.target.setCustomValidity('');
+     })
+
+ // vul wachtwoord in
+ const inputWachtwoord = document.querySelector('input[name="inputWachtwoord"]');
+ const inputWachtwoordHerhaal = document.querySelector('input[name="inputWachtwoordHerhaal"]');
+ inputWachtwoordHerhaal.addEventListener('invalid', function (event) {
+  if (inputWachtwoord.value != inputWachtwoordHerhaal){
+      event.target.setCustomValidity('Uw wachtwoorden komen niet overeen');
+     }
+      if (event.target.validity.valueMissing){
+      event.target.setCustomValidity('Uw Heeft niets ingevuld');
+      }
+     })
+
+     inputWachtwoordHerhaal.addEventListener('change', function (event) {
+      event.target.setCustomValidity('');
+     })
+
+      </script>
+
+
+
+
+
+ <script src="./js/gsap.js"></script>
  <script src="./js/javaScript.js"></script>
   </body>
 

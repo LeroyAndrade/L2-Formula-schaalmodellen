@@ -9,6 +9,7 @@
 
     <title>Opdracht </title>
       <link rel="stylesheet" type="text/css" href="./opmaak/template.css">
+      <link rel="stylesheet" type="text/css" href="./opmaak/uploaden.css">
   </head>
 
   <!-- -->
@@ -31,77 +32,160 @@
 
    <!--Header nav menu-->
    <section class="vulling">
-       <section id="wrapperNavMenu">
-        <h2 class="verberg">Formule 1</h2>
+    <section id="wrapperNavMenu">
+     <h2 class="verberg">Formule 1</h2>
 
-            <nav id="menu">
-             
-             <section id="menuNav">
-            
-              <!--Login-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
-               <a href="./index.html" class="naamMenu wit">Login</a>  
+         <nav id="menu">
+          
+          <section id="menuNav">
+         
+           <!--Login-->
+           <article class="menuRegel" id="menuA1">
+            <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
+            <a href="./index.html" class="naamMenu wit">Home</a>  
+           </article>
+           <!--END login-->
+
+
+           <!--Modellen-->
+            <article class="menuRegel" id="menuA2">
+             <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
+             <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
+             <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+             <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+            </article>
+
+            <!--Dropdown-->
+             <section id="dropdownContainer">
+
+              <article id="dropdownSectie">
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
+               <a href="./modellen.html" class="naamMenu rood subMenu1">Ferrari</a>                       
               </article>
-              <!--END login-->
 
-
-              <!--Modellen-->
-               <article class="menuRegel">
-                <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
-                <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
-                <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-                <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-               </article>
-
-               <!--Dropdown-->
-                <section id="dropdownContainer">
-
-                 <article id="dropdownSectie">
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
-                  <a href="#" class="naamMenu rood">Ferrari</a>                       
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
-                  <a href="#" class="naamMenu zwart">Mercedes</a>                        
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
-                  <a href="#" class="naamMenu blauw">Redbull</a>               
-                 </article>
-                </section>
-               <!--END Dropdown-->
-              <!--END modellen-->
-
-              <!--Upload-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
-               <a href="./upload.html" class="naamMenu wit">Upload</a>   
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
+               <a href="./modellen.html" class="naamMenu zwart subMenu2">Mercedes</a>                        
               </article>
-              <!--END Upload-->
 
-              <!--Register-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
-               <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
+               <a href="./modellen.html" class="naamMenu blauw subMenu3">Redbull</a>               
               </article>
-              <!--END register-->
+             </section>
+            <!--END Dropdown-->
+           <!--END modellen-->
 
-              <!--Sparen-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
-               <a href="./munten.html" class="naamMenu wit">Sparen</a>  
-              </article>
-              <!--END sparen-->
-             </section>  
-           </nav>  
-       </section>
-       <img id="senna-voertuig" src="./export-img/Senna.png" alt="Ayrton Senna">
-      </section>
+           <!--Upload-->
+           <article class="menuRegel" id="menuA3">
+            <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
+            <a href="./upload.html" class="naamMenu wit">Upload</a>   
+           </article>
+           <!--END Upload-->
+
+           <!--Register-->
+           <article class="menuRegel" id="menuA4">
+            <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
+            <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+           </article>
+           <!--END register-->
+
+           <!--Sparen-->
+           <article class="menuRegel" id="menuA5">
+            <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
+            <a href="./munten.html" class="naamMenu wit">Sparen</a>  
+           </article>
+           <!--END sparen-->
+          </section>  
+        </nav>  
+    </section>
+    
+    <img id="senna-voertuig" src="./export-img/Ferrari-RedBull.jpg" alt="Race afbeelding Ferrari en Red Bull">
+   </section>
   
 
+
+
+
+       <!-- Munten -->
+
+
+
+       <main>
+        
+         <span class="blauw font30">Uploaden</span>
+
+
+         
+         <br>
+
+        
+         <article class="spacebetween">
+          <span></span> 
+          
+          <!-- methode post op release -->
+          <form method="get" enctype="multipart/form-dat" action="#">   
+          
+
+           <!--Dit is wat er gebeurd:
+
+            In uploaden.css -> bezit de border de eigenschap: de breedtes en hoogtes. Dit is het kader. Sta mij alstublieft toe u een vierkant te laten visualeren. De vierkant is een div.
+          
+           In template.css = bezit de klasse .column de volgende eigenschappen:  display: flex
+           dus alle items komen per default naast elkaar, daarmee heb ik ook de flex 'library' opgeroepen. 
+            Daarom kan ik nu alle items onder elkaar krijgen met flex-direction: column; 
+            Dus binnen de vierkant, top-left, komt foreach new element, onder elkaar te staan.
+
+            dus ieder div binnen dit .border kader wordt getoond als: van boven naar beneden omdat dit de eigenschap is de je aan de vierkant /div meegeeft.
+            Dit kan allemaal in 1 div met een wat strakker uitleg maar ik gebruik individuele klasses zodat ik ze kan hergebruiken en dat is efficiënter en bespaart KILObytes aan code. 
+
+           
+          .column er voor zorgt dat de elementen onder elkaar tonen en de flex-direction verteld waar op de horizontale lijn die content wordt getoond.
+          
+         Ik heb een leeg span geplaatst omdat de flexbox dat meeteld als element. Want die span wordt gereserveerd door de flexbox
+        
+        Hoe ik de tekst: 'Geüploade afbeelding' precies in het midden krijg ten opzichte van de height is waar ik nog mee bezig ben-->
+          <div class="border column align-items-center">
+           <span> </span>
+           <span>Geüploade afbeelding</span>
+           <span> </span>
+          </div>
+
+
+
+          <span class="blauw font24">Toegestaan: .png .jpg .jpeg</span>
+           
+          <section class="column">
+           <input type="file" class="button1">
+
+           <span class="paddingTop10"></span>
+           <span>Informatie</span>
+           <input type="text" placeholder="Informatie">
+           <span class="paddingTop10"></span>
+           
+           <span>Prijs</span>
+           <input type="number" placeholder="&euro; prijs">
+           <span class="paddingTop10"></span>
+       
+           <span>Punten</span>
+           <input type="text" placeholder="85 &#47; 100 ">
+           <span class="paddingTop10"></span>
+ 
+           <button type="submit" class="buttonSubmit align-items-center"  type="submit">Verzenden</button>
+          </section>
+
+          
+          </form>
+
+         <span> </span>
+         </article>
+   
+
+       </main>
+
+
+
+ <script src="./js/gsap.js"></script>
  <script src="./js/javaScript.js"></script>
   </body>
 

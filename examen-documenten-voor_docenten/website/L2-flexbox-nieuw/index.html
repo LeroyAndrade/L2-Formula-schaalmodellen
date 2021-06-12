@@ -9,6 +9,34 @@
 
     <title>Opdracht </title>
       <link rel="stylesheet" type="text/css" href="./opmaak/template.css">
+      <link rel="stylesheet" type="text/css" href="./opmaak/abonnement.css">
+
+      <style>
+
+       @-webkit-keyframes change-color {
+         0%   { background-color: gold; }
+         100% { background-color: green; }
+       }
+       @-moz-keyframes change-color {
+         0%   { background-color: gold; }
+         100% { background-color: green; }
+       }
+       @-o-keyframes change-color {
+         0%   { background-color: gold; }
+         100% { background-color: green; }
+       }
+       @keyframes change-color {
+         0%   { background-color: gold; }
+         100% { background-color: green; }
+       }
+
+       .animated {
+        -webkit-animation: change-color 3s infinite; /* Safari 4+ */
+        -moz-animation:    change-color 3s infinite; /* Fx 5+ */
+        -o-animation:      change-color 3s infinite; /* Opera 12+ */
+        animation:         change-color 3s infinite; /* IE 10+ */
+       }
+     </style>
   </head>
 
   <!-- -->
@@ -31,78 +59,213 @@
 
    <!--Header nav menu-->
    <section class="vulling">
-       <section id="wrapperNavMenu">
-        <h2 class="verberg">Formule 1</h2>
+    <section id="wrapperNavMenu">
+     <h2 class="verberg">Formule 1</h2>
 
-            <nav id="menu">
-             
-             <section id="menuNav">
-            
-              <!--Login-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
-               <a href="./index.html" class="naamMenu wit">Login</a>  
+         <nav id="menu">
+          
+          <section id="menuNav">
+         
+           <!--Login-->
+           <article class="menuRegel" id="menuA1">
+            <span class="logo"><img src="./export-img/wit-persoon.png" alt="wit-persoon icoon"></span>  
+            <a href="./index.html" class="naamMenu wit">Home</a>  
+           </article>
+           <!--END login-->
+
+
+           <!--Modellen-->
+            <article class="menuRegel" id="menuA2">
+             <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
+             <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
+             <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+             <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
+            </article>
+
+            <!--Dropdown-->
+             <section id="dropdownContainer">
+
+              <article id="dropdownSectie">
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
+               <a href="./modellen.html" class="naamMenu rood subMenu1">Ferrari</a>                       
               </article>
-              <!--END login-->
 
-              
-
-              <!--Modellen-->
-               <article class="menuRegel">
-                <span class="logo"><img src="./export-img/wit-afbeelding.png" alt="wit afbeelding"></span>  
-                <a href="./modellen.html" class="naamMenu wit">Modellen</a>  
-                <button id="bergjeGesloten"  class="logo degDraai180"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-                <button id="bergjeGeopend" class="logo verberg"><img src="./export-img/wit-bergje.png" alt="wit bergje"></button>  
-               </article>
-
-               <!--Dropdown-->
-                <section id="dropdownContainer">
-
-                 <article id="dropdownSectie">
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 1"></span>  
-                  <a href="#" class="naamMenu rood">Ferrari</a>                       
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
-                  <a href="#" class="naamMenu zwart">Mercedes</a>                        
-                 </article>
-
-                 <article >
-                  <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
-                  <a href="#" class="naamMenu blauw">Redbull</a>               
-                 </article>
-                </section>
-               <!--END Dropdown-->
-              <!--END modellen-->
-
-              <!--Upload-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
-               <a href="./upload.html" class="naamMenu wit">Upload</a>   
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 2"></span>  
+               <a href="./modellen.html" class="naamMenu zwart subMenu2">Mercedes</a>                        
               </article>
-              <!--END Upload-->
 
-              <!--Register-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
-               <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+              <article >
+               <span class="logo"><img src="./export-img/zwart-auto.png" alt="wit auto afbeelding 3"></span>  
+               <a href="./modellen.html" class="naamMenu blauw subMenu3">Redbull</a>               
               </article>
-              <!--END register-->
+             </section>
+            <!--END Dropdown-->
+           <!--END modellen-->
 
-              <!--Sparen-->
-              <article class="menuRegel">
-               <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
-               <a href="./munten.html" class="naamMenu wit">Sparen</a>  
-              </article>
-              <!--END sparen-->
-             </section>  
-           </nav>  
-       </section>
-       <img id="senna-voertuig" src="./export-img/Senna.png" alt="Ayrton Senna">
+           <!--Upload-->
+           <article class="menuRegel" id="menuA3">
+            <span class="logo"><img src="./export-img/wit-upload.png" alt="wit upload icoon"></span>  
+            <a href="./upload.html" class="naamMenu wit">Upload</a>   
+           </article>
+           <!--END Upload-->
+
+           <!--Register-->
+           <article class="menuRegel" id="menuA4">
+            <span class="logo"><img src="./export-img/wit-registreer.png" alt="wit registreer icon"></span>  
+            <a href="./registreer.html" class="naamMenu wit">Registreer</a>  
+           </article>
+           <!--END register-->
+
+           <!--Sparen-->
+           <article class="menuRegel" id="menuA5">
+            <span class="logo"><img src="./export-img/wit-munt.png" alt="wit spaar icon"></span>  
+            <a href="./munten.html" class="naamMenu wit">Sparen</a>  
+           </article>
+           <!--END sparen-->
+          </section>  
+        </nav>  
+    </section>
+    
+    <imgid="senna-voertuig" src="./export-img/driver-lineup.jpg" alt="Rijders foto 2021">
+
+    <iframe id="senna-voertuig" width="560" height="315" src="https://www.youtube.com/embed/KpuTxPN4KTU" title="Formule 1 intro 2006" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   </section>
+
+
+
+       <!-- Munten -->
+
+
+      <section class="tab drie">
+       <button class="tablinks animated" onclick="tabBladen(event,  'Gold'  )">  Gold    </button>
+       <button class="tablinks" onclick="tabBladen(event,  'Silver')">  Silver  </button>
+       <button class="tablinks" onclick="tabBladen(event,  'Bronze')">  Bronze  </button>
       </section>
-  
 
+      
+
+      <div id="Gold" class="tabcontent Gold ">
+      <span class="order1 font18">Drie modellen per maand t.w.v. &euro; 55,-</span>
+
+      <br><br>
+      <span>+ 50 munten per maand
+       <a href="#">
+
+      </a>
+      </span>
+      
+      <br><br>
+      <!-- <img src="./export-img/Ferrari-553_squalo.png" alt=""> -->
+      <img id="gold-Ferrari" class="afbeelding-fit"  src="./export-img/Redbull.jpg" alt="Redbull 2016">
+      <br>
+
+       <section class="prijsGoud">
+        <span> &euro;30,- per maand. </span>
+       </section>
+      </div>
+
+
+
+     
+
+ 
+     <div id="Silver" class="tabcontent">
+      <span class="order1 font18">Twee modellen per maand t.w.v.  &euro; 25</span>
+
+      
+      <br><br>
+      <span>+ 20 munten per maand
+       <br><br>
+       <a href="#">
+
+      </a>
+      <a href="#">
+       <img class="afbeelding-fit"  src="./export-img/Ferrari-553_squalo.png" alt="Icoon i">
+      </a>
+      </span>
+     
+      <br>
+
+
+
+
+
+       <section class="prijsGoud">
+        <span> &euro;20,- per maand.</span>
+       </section>
+      </div>
+
+
+     
+      <div id="Bronze" class="tabcontent Silver">
+       <span class="order1 font18">Éen model per maand t.w.v.  &euro; 15</span>
+ 
+       
+       <br><br>
+       <span>+ 10 munten per maand
+        <br><br>
+        <a href="#">
+      
+       </a>
+       <a href="#">
+        <img class="afbeelding-fit" src="./export-img/Ferrari-553_squalo.png" alt="Icoon i">
+       </a>
+       </span>
+      
+       <br>
+ 
+        <section class="prijsGoud">
+         <span> &euro;10,- per maand.</span>
+        </section>
+       </div>
+ 
+       <br>
+
+        <a href="./modellen.html">
+        <span id="ctaMunt" class="centerA">Klik voor meer modellen</span>
+        </a>
+
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     <script>
+      function tabBladen(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+
+
+
+
+
+ <script src="./js/gsap.js"></script>
  <script src="./js/javaScript.js"></script>
   </body>
 

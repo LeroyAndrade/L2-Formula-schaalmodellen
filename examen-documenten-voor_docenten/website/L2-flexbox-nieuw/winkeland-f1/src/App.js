@@ -7,8 +7,9 @@ import data from './voertuigModellen.js';
 
 
 //Importeer useState om het te gebruiken voor winkelmand
-import { useState } from 'react';
+import react, { useState } from 'react';
 import FunctionClick from './components/classes/FunctionClick';
+import Navbar from './components/Navbar';
 
 
 // import './js/javaScript.js';
@@ -56,8 +57,13 @@ function App() {
  };
 
   return (
+   
    <div className="App">
+    {/* useState */}
+    <Navbar></Navbar>
+    
     {/*Menu REACT object*/}
+  
     <Header telWinkelmandItems={winkelmandItems.length}></Header>
 
     {/* function eventhandlers */}
@@ -69,7 +75,7 @@ function App() {
     <Main onAdd={onAdd} products={products}></Main>
 
 
- 
+
     </div>
        {/*Winkelmand REACT object*/}
        <Winkelmand winkelmandItems={winkelmandItems} onAdd={onAdd} onRemove={onRemove}></Winkelmand>
