@@ -3,7 +3,7 @@
 De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunnen zich wagen aan de schaalmodellen die je maandelijks opgestuurd krijgt wanneer jij je daar voor aanmeld. Een website van fans voor fans.
 
 # De moodboord:  
-* https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/blob/master/examen-documenten-voor_docenten/week%204%20n%205%20-%20moodboord%2C%20wireframe%2C%20styletile%20en%20visueel/moodboord/moodboord.png
+* https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/blob/master/examen-documenten-voor_docenten/week%204%20n%205%20-%20moodboord%2C%20wireframe%2C%20styletile%20en%20visueel/Moodboard%20design/moodboard.png
 
 
 # Website van CSS naar Flexbox
