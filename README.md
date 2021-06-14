@@ -5,6 +5,9 @@ De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunne
 # De moodboord:  
 * https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/blob/master/examen-documenten-voor_docenten/week%204%20n%205%20-%20moodboord%2C%20wireframe%2C%20styletile%20en%20visueel/Moodboard%20design/moodboard.png
 
+# Onderzoek
+* https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/blob/master/examen-documenten-voor_docenten/week%203%20-%20persona%20en%20onderzoek/onderzoek.pdf
+
 
 # Website van CSS naar Flexbox
 ## Website wordt nu omgezet naar REACT
