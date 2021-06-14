@@ -8,6 +8,8 @@ De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunne
 # Onderzoek
 * https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/blob/master/examen-documenten-voor_docenten/week%203%20-%20persona%20en%20onderzoek/onderzoek.pdf
 
+# Flexbox
+* voor Flexbox heb ik 1 maand onderzoek gedaan en 99% begrepen. Align-self is waar ik nog wat mee moet werken. Deze methode van Flexbox haalt zoveel coderen tijd weg. Wanneer het kwartje viel, werd de werking ervan ook écht duidelijk voor mij.
 
 # Website van CSS naar Flexbox
 ## Website wordt nu omgezet naar REACT
