@@ -1,4 +1,4 @@
-# L2-Formula-schaalmodellen (Flexbox only).
+# L2-Formula-schaalmodellen (Flexbox and MOBILE only).
 ## mobile only (ik heb gewerkt op breedte 414 x lengte 846)
 De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunnen zich wagen aan de schaalmodellen die je maandelijks opgestuurd krijgt wanneer jij je daar voor aanmeld. Een website van fans voor fans.
 
@@ -13,5 +13,6 @@ De website waar alles wordt besproken over Formule 1. De echte liefhebbers kunne
 
 # Website van CSS naar Flexbox
 ## Website wordt nu omgezet naar REACT
-## Live url: https://firesofdestruction.nl/bewijzenmap/l2/kid/p4/index.html
+## Live url (mobile only): https://firesofdestruction.nl/bewijzenmap/l2/kid/p4/index.html
+## Live url REACT (test):https://firesofdestruction.nl/bewijzenmap/portfolio/websites/react1/
 ## Github: https://github.com/LeroyAndrade/L2-Formula-schaalmodellen/tree/master/examen-documenten-voor_docenten/website/L2-flexbox-nieuw/winkeland-f1/src
